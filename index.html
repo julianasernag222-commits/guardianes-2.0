@@ -1,39 +1,52 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Guardianes 2.0</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrusel de eventos Itagüí</title>
+  <link rel="stylesheet" href="carrusel.css">
 </head>
 <body>
-    <header>
-        <h1>Guardianes 2.0</h1>
-    </header>
+  <div class="carrusel-fondo">
+    <div class="carrusel">
+      <button class="flecha flecha-izquierda" onclick="moverCarrusel(-1)">&#10094;</button>
+      <div class="carrusel-contenido" id="carruselContenido">
 
-    <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Características</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
+        <div class="tarjeta">
+          <span class="fecha">9 - 17 Agosto</span>
+          <img src="Captura_de_pantalla_2025-10-27_a_la_s__3.57.39_p.m.-removebg-preview.png" alt="Fiestas 2025">
+          <h3>Fiestas 2025</h3>
+          <p>Itagüí vivirá sus Fiestas 2025 con más de 1.000 artistas, conciertos gratis y el regreso del Día Mundial de la Pereza.</p>
+        </div>
 
-    <main>
-        <section>
-            <h2>Bienvenido</h2>
-            <p>Empieza a construir tu proyecto aquí. Reemplaza este contenido por el tuyo.</p>
-        </section>
-    </main>
+        <div class="tarjeta">
+          <span class="fecha">17 de agosto</span>
+          <img src="Captura de pantalla 2025-09-29 a la(s) 3.07.56 p.m..png" alt="Día Mundial de la Pereza">
+          <h3>Día Mundial de la Pereza</h3>
+          <p>Una celebración única con desfiles de camas y actividades recreativas, promoviendo la tranquilidad y el descanso.</p>
+        </div>
 
-    <footer>
-        <p>&copy; <span id="year"></span> Guardianes 2.0</p>
-    </footer>
+        <div class="tarjeta">
+          <span class="fecha">20 de septiembre</span>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Itagui_parque_principal.jpg" alt="Cultura Viva">
+          <h3>Cultura Viva</h3>
+          <p>Festival cultural con teatro, danza y música local para disfrutar del arte y la creatividad itagüiseña.</p>
+        </div>
 
-    <script>
-        // Ajusta el año automáticamente
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+      </div>
+      <button class="flecha flecha-derecha" onclick="moverCarrusel(1)">&#10095;</button>
+    </div>
+  </div>
+
+  <script>
+    const carrusel = document.getElementById("carruselContenido");
+    function moverCarrusel(direccion) {
+      const ancho = carrusel.querySelector(".tarjeta").offsetWidth + 20;
+      carrusel.scrollBy({
+        left: direccion * ancho,
+        behavior: "smooth"
+      });
+    }
+  </script>
 </body>
 </html>
