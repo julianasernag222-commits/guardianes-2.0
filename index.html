@@ -1,39 +1,65 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Guardianes 2.0</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acerca de Nosotros - Itagüí Vibes</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- fuente -->
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat:wght@300;500;700&family=Oswald:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="acercade.css">
 </head>
+
 <body>
-    <header>
-        <h1>Guardianes 2.0</h1>
-    </header>
+  <section class="acerca-container py-5">
+    <div class="container-fluid px-5">
+      <div class="row align-items-start gy-5">
 
-    <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Características</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
+        <!-- esto es lo de la izquierda -->
+        <div class="col-md-6 izquierda">
+          <h1 class="titulo-principal">Acerca de</h1>
+          <h2 class="subtitulo">Nosotros</h2>
 
-    <main>
-        <section>
-            <h2>Bienvenido</h2>
-            <p>Empieza a construir tu proyecto aquí. Reemplaza este contenido por el tuyo.</p>
-        </section>
-    </main>
+          <p class="texto">
+            Somos un equipo apasionado por mostrar el lado auténtico de Itagüí. Creemos que la ciudad tiene mucho más de lo que se ve a simple vista: historias, sabores, espacios y experiencias que merecen ser descubiertas.
+            Por eso creamos esta aplicación, con la idea de acercar a las personas a esos lugares que hacen único a Itagüí.
+          </p>
 
-    <footer>
-        <p>&copy; <span id="year"></span> Guardianes 2.0</p>
-    </footer>
+          <p class="resaltado">
+            Te guiamos para que encuentres los lugares ideales según lo que buscas: desde rincones llenos de historia hasta espacios verdes perfectos para desconectarte de la rutina.
+          </p>
+        </div>
 
-    <script>
-        // Ajusta el año automáticamente
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+        <!-- esto es lo de la derecha -->
+        <div class="col-md-6 derecha">
+
+  <h2 class="titulo-tip">
+    ACERCA DE
+<!-- este es el logo tip -->
+
+    <img src="logo TIP.png" alt="Logo TIP" class="logo-tip">
+  </h2>
+
+  <div class="subrayado"></div>
+
+  <p class="texto">
+    Nuestra app fue creada para quienes no se conforman con ver lo típico, sino que quieren sentir la ciudad: caminar sus barrios, probar su comida, conocer su gente y sorprenderse con lugares que no aparecen en los mapas tradicionales.
+  </p>
+
+  <p class="texto">
+    <strong>TIP</strong> es una herramienta pensada para mostrarte la ciudad desde adentro. Reunimos información real, actualizada y seleccionada a mano sobre lugares que vale la pena visitar: desde cafeterías escondidas hasta plazas llenas de arte urbano, desde zonas verdes para descansar hasta escenarios culturales donde siempre pasa algo.
+  </p>
+</div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
