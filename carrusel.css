@@ -11,7 +11,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(Captura_de_pantalla_2025-10-27_a_la_s__3.57.39_p.m.-removebg-preview.png); 
+  background-image: url(); 
   background-size: contain; 
   background-position: top center;
   background-repeat: no-repeat;
@@ -132,4 +132,25 @@ body {
     height: 350px;
     background-size: contain;
   }
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #f9f8e9; /* Fondo beige */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; 
+}
+
+/* Círculo amarillo centrado que sobresale de los lados */
+.circulo {
+  position: absolute;
+  width: 3000px;              
+  height: 2000px;
+  background-color: #d5a528;  
+  border-radius: 50%;
+  left: 50%;
+  transform: translate(-50%, 500px); 
 }
