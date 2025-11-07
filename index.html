@@ -42,7 +42,6 @@
       </div>
       <button class="flecha flecha-derecha" onclick="moverCarrusel(1)">&#10095;</button>
     </div>
-
     <nav class="nav-links">
       <a href="#alojamiento">ALOJAMIENTO</a>
       <a href="#gastronomia">GASTRONOMÍA</a>
@@ -99,6 +98,7 @@
 
   <div class="circulo"></div>
 
+=======
   <script>
     const carrusel = document.getElementById("carruselContenido");
     function moverCarrusel(direccion) {
@@ -107,5 +107,24 @@
     }
   </script>
 
+      carrusel.scrollBy({
+        left: direccion * ancho,
+        behavior: "smooth"
+      });
+    }
+  </script>
+</body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Círculo amarillo centrado</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <div class="circulo"></div>
+    
+
+  
+>>>>>>> e1cad0e (nuevo 3)
 </body>
 </html>
