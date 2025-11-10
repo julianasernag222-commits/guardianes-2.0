@@ -1,41 +1,41 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  background-color: #41604D;
-  color: #fff;
+  background-color: #41604D; /* verde oscuro chill */
+  color: #fff; /* letras blancas para que resalten */
 }
 
-/* === CONTENEDOR CENTRAL === */
+/* este es el cuadro principal donde va todo el contenido */
 .contenedor {
-  max-width: 1100px;        /* Ancho máximo del contenido */
-  margin: 0 auto;           /* Centra horizontalmente */
-  background-color: #41604D;
-  padding: 40px 50px;
-  border-radius: 20px;      /* Bordes suaves */
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);  /* Sombra equilibrada */
+  max-width: 1100px;        
+  margin: 0 auto;           
+  background-color: #41604D; 
+  padding: 40px 50px;       
+  border-radius: 20px;      
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);  
   position: relative;
 }
 
-/* === SECCIÓN PRINCIPAL === */
+/* fondo de la montaña */
 .montana {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;        /* Centra el contenedor verticalmente */
-  background-color: #2f4b3a; /* Fondo exterior más oscuro */
+  min-height: 100vh;        
+  background-color: #2f4b3a; 
   padding: 20px;
 }
 
-/* --- TÍTULO PRINCIPAL --- */
+/* nombrecito */
 .titulo {
   font-family: 'Bilbo Swash Caps', cursive;
-  color: #f6a800;
+  color: #f6a800;  
   font-size: 50px;
   margin-bottom: 20px;
   text-align: center;
 }
 
-/* --- DESCRIPCIÓN PRINCIPAL --- */
+/* como la descripción */
 .descripcion {
   max-width: 900px;
   margin: 0 auto 40px;
@@ -44,17 +44,16 @@ body {
   text-align: center;
 }
 
-/* --- CONTENIDO PRINCIPAL --- */
+/* el contenido principal va dividido en dos partes */
 .contenido {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  flex-wrap: wrap;           /* Se adapta si no cabe todo en una línea */
+  flex-wrap: wrap;          
   text-align: left;
-  gap: 40px;                 /* Espacio entre texto e info */
-}
-
-/* --- SECCIÓN DE TEXTO IZQUIERDA --- */
+  gap: 40px;                
+} 
+/* el texto de la izquierda donde cuento la historia */
 .texto {
   flex: 1 1 500px;
   min-width: 300px;
@@ -74,7 +73,7 @@ body {
   line-height: 1.6;
 }
 
-/* --- BOTÓN --- */
+/* este es el botoncito para llegar o ver más */
 .btn-llegar {
   display: inline-block;
   margin-top: 15px;
@@ -88,7 +87,7 @@ body {
   margin-right: 6px;
 }
 
-/* --- INFO DERECHA --- */
+/* la info de la derecha tipo ubicación, horario, etc */
 .info {
   flex: 1 1 250px;
   min-width: 250px;
@@ -110,7 +109,7 @@ body {
   text-align: center;
 }
 
-/* --- ENLACES --- */
+/* los enlaces normales tipo volver o leer más */
 a {
   color: #fff;
   text-decoration: none;
@@ -120,7 +119,7 @@ a:hover {
   color: #f6a800;
 }
 
-/* --- DECORACIONES --- */
+/* las decoraciones de las esquinas (detalles visuales) */
 .decoracion {
   position: absolute;
   width: 150px;
@@ -136,8 +135,7 @@ a:hover {
   right: 10px;
 }
 
-
-/* --- BOTÓN ATRÁS --- */
+/* este es el botón para volver atrás */
 .botonatras {
   position: absolute;
   top: 15px;
@@ -146,7 +144,7 @@ a:hover {
   height: auto;
   cursor: pointer;
   transition: transform 0.3s ease, filter 0.3s ease;
-  z-index: 20; /* para que quede encima de todo */
+  z-index: 20; /* para que quede por encima de todo */
 }
 
 .botonatras:hover {
@@ -154,7 +152,7 @@ a:hover {
   filter: drop-shadow(0 0 5px #f6a800);
 }
 
-/* --- RESPONSIVE --- */
+/* ajustes para pantallas más pequeñas tipo celular */
 @media (max-width: 768px) {
   .contenido {
     flex-direction: column;
@@ -178,4 +176,4 @@ a:hover {
   .contenedor {
     padding: 30px;
   }
-}
+  }
