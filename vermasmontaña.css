@@ -136,6 +136,24 @@ a:hover {
   right: 10px;
 }
 
+
+/* --- BOTÓN ATRÁS --- */
+.botonatras {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 50px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  z-index: 20; /* para que quede encima de todo */
+}
+
+.botonatras:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 5px #f6a800);
+}
+
 /* --- RESPONSIVE --- */
 @media (max-width: 768px) {
   .contenido {
