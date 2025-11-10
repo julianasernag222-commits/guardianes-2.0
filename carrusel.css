@@ -144,7 +144,6 @@ body {
   overflow: hidden; 
 }
 
-/* Círculo amarillo centrado que sobresale de los lados */
 .circulo {
   position: absolute;
   width: 3000px;              
@@ -153,4 +152,12 @@ body {
   border-radius: 50%;
   left: 50%;
   transform: translate(-50%, 500px); 
+}
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
 }

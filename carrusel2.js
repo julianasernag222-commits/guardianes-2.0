@@ -4,8 +4,8 @@ const descripcion = document.getElementById("descripcion");
 
 const parques = [
   {
-    nombre: "Simón Bolívar",
-    descripcion: "El Parque Simón Bolívar es uno de los pulmones verdes de Itagüí, ideal para caminar, descansar y disfrutar en familia."
+    nombre: "Acuaparque Ditaires",
+    descripcion: "Este balneario es un centro recreativo con piscinas para toda la familia."
   },
   {
     nombre: "Parque Obrero",
@@ -20,20 +20,18 @@ const parques = [
     descripcion: "El Parque del Artista es uno de los escenarios más reconocidos por sus conciertos, ferias y eventos al aire libre."
   },
   {
-    nombre: "Parque de Itagüí",
-    descripcion: "El Parque de Itagüí combina naturaleza, arte y cultura, ofreciendo un espacio perfecto para el encuentro ciudadano."
+    nombre: "Parque de las Chimeneas",
+    descripcion: "Cuenta con un escenario al aire libre, chorros de agua y una estructura metálica con efectos de luces y agua. También conserva las chimeneas históricas del lugar."
   }
 ];
 
-// Cuando se hace clic en una imagen
 items.forEach(item => {
   item.addEventListener("click", () => {
-    // Quita la clase activa de todas
+    
     items.forEach(i => i.classList.remove("activo"));
-    // Activa la seleccionada
+  
     item.classList.add("activo");
 
-    // Muestra la info correspondiente
     const index = parseInt(item.dataset.index);
     titulo.textContent = parques[index].nombre;
     descripcion.textContent = parques[index].descripcion;
