@@ -1,39 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Guardianes 2.0</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.ico">
-</head>
-<body>
-    <header>
-        <h1>Guardianes 2.0</h1>
-    </header>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imágenes Blender</title>
 
-    <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Características</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Montserrat:wght@400&display=swap" rel="stylesheet">
+
+  <!-- CSS de barra y hero -->
+  <link rel="stylesheet" href="barra1.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Itag%C3%BC%C3%AD_logo.svg/512px-Itag%C3%BC%C3%AD_logo.svg.png" alt="Logo Itagüí">
+    </div>
+
+    <nav class="nav-links">
+      <a href="#alojamiento">ALOJAMIENTO</a>
+      <a href="#gastronomia">GASTRONOMÍA</a>
+      <a href="#parques">PARQUES</a>
+      <a href="#naturaleza">NATURALEZA</a>
+      <a href="#eventos">EVENTOS</a>
+      <a href="#galeria">GALERÍA</a>
+      <a href="#acercade" class="acerca-btn">ACERCA DE</a>
     </nav>
 
-    <main>
-        <section>
-            <h2>Bienvenido</h2>
-            <p>Empieza a construir tu proyecto aquí. Reemplaza este contenido por el tuyo.</p>
-        </section>
-    </main>
+    <div class="icons">
+      <img src="https://i.postimg.cc/bJc9DMJC/usuario-img.png" alt="Usuario" class="icon">
+      <img src="https://i.postimg.cc/VNcJjcq6/Captura-de-pantalla-2025-10-24-135806-removebg-preview.png" alt="Agregar" class="icon icon-plus">
+    </div>
+  </header>
 
-    <footer>
-        <p>&copy; <span id="year"></span> Guardianes 2.0</p>
-    </footer>
 
-    <script>
-        // Ajusta el año automáticamente
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+  <!-- SECcion principal -->
+  <section class="principal">
+    <h1>desubre los tesoros escondidos de itagui</h1>
+    <button class="btn-descubrir">DESCUBRIR <span class="flecha">↓</span></button>
+  </section>
+
 </body>
 </html>
