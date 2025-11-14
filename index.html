@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Imágenes Blender</title>
+  <title>Carrusel de eventos Itagüí</title>
 
-  <!-- Fuentes -->
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Montserrat:wght@400&display=swap" rel="stylesheet">
 
-  <!-- CSS de barra y hero -->
   <link rel="stylesheet" href="barra1.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="carrusel.css">
+  <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
@@ -36,12 +36,53 @@
     </div>
   </header>
 
-
-  <!-- SECcion principal -->
   <section class="principal">
-    <h1>desubre los tesoros escondidos de itagui</h1>
+    <h1>Descubre los tesoros escondidos de Itagüí</h1>
     <button class="btn-descubrir">DESCUBRIR <span class="flecha">↓</span></button>
   </section>
+
+  <div class="carrusel-fondo">
+    <div class="carrusel">
+      <button class="flecha flecha-izquierda" onclick="moverCarrusel(-1)">&#10094;</button>
+
+      <div class="carrusel-contenido" id="carruselContenido">
+
+        <div class="tarjeta">
+          <span class="fecha">9 - 17 Agosto</span>
+          <img src="ita.jpg" alt="Fiestas 2025 Itagüí">
+          <h3>Fiestas 2025</h3>
+          <p>Itagüí vivirá sus Fiestas 2025 con más de 1.000 artistas, conciertos gratis y el regreso del Día Mundial de la Pereza.</p>
+        </div>
+
+        <div class="tarjeta">
+          <span class="fecha">17 de agosto</span>
+          <img src="ita1.jpg" alt="Día Mundial de la Pereza">
+          <h3>Día Mundial de la Pereza</h3>
+          <p>Una celebración única con desfiles de camas y actividades recreativas.</p>
+        </div>
+
+        <div class="tarjeta">
+          <span class="fecha">19 - 20 de julio</span>
+          <img src="fiestas_independencia_2025.jpg" alt="Independencia en Itagüí">
+          <h3>Gran Fiesta de la Independencia</h3>
+          <p>Celebración cívica y cultural que conmemora la independencia de Colombia.</p>
+        </div>
+
+      </div>
+
+      <button class="flecha flecha-derecha" onclick="moverCarrusel(1)">&#10095;</button>
+    </div>
+  </div>
+
+  <div class="circulo"></div>
+
+  <script>
+    const carrusel = document.getElementById("carruselContenido");
+    function moverCarrusel(direccion) {
+      const ancho = carrusel.querySelector(".tarjeta").offsetWidth + 20;
+      carrusel.scrollBy({ left: direccion * ancho, behavior: "smooth" });
+    }
+  </script>
 
 </body>
 </html>
