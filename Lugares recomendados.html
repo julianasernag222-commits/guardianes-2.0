@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rinconcitos Especiales</title>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #FBF7E3;
+      font-family: "Poppins", sans-serif;
+    }
+
+
+    .title-box {
+      background: white;
+      padding: 18px 40px;
+      border-radius: 12px;
+      border: 2px solid #d0d0d0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      display: inline-block;
+    }
+
+    .title-box h2 {
+      color: #5A6B2A;
+      margin: 0;
+      font-size: 22px;
+      text-align: center;
+    }
+
+
+    .card-custom {
+      width: 420px;
+      height: 300px;
+      background-color: #EDEDED;
+      border-radius: 12px;
+      padding: 15px;
+      text-align: center;
+      position: relative;
+      border: none;
+    }
+
+    .btn-more {
+      background-color: #D1D5D8;
+      border: none;
+      border-radius: 20px;
+      padding: 5px 15px;
+      font-size: 13px;
+      margin-top: 35px;
+    }
+
+    .plus-btn {
+      background-color: #D4A738;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      color: white;
+      margin: 10px auto 0 auto;
+      cursor: pointer;
+    }
+
+    
+    .desc {
+      display: none;
+      background: white;
+      border-radius: 10px;
+      padding: 12px;
+      margin-top: 10px;
+      border-left: 4px solid #D4A738;
+    }
+
+   
+    .circle {
+      width: 900px;
+      height: 900px;
+      background-color: #D4A738;
+      border-radius: 50%;
+      position: absolute;
+      right: -900px;
+      top: 40%;
+      transform: translateY(-50%);
+      z-index: -1;
+    }
+    .container {
+  max-width: 1200px;
+}
+    @media (max-width: 992px) {
+      .circle {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div class="container text-center mt-5">
+    <div class="title-box">
+      <h2>RINCONSITOS ESPECIALES EN ITAGÜÍ</h2>
+    </div>
+  </div>
+
+
+  <div class="container position-relative mt-5">
+
+    <div class="circle"></div>
+
+    <div class="row justify-content-center g-5">
+
+    
+      <div class="col-12 col-md-6 d-flex justify-content-center">
+        <div class="card-custom">
+          <button class="btn-more">saber más</button>
+          <div class="plus-btn" onclick="toggleDesc(1)">+</div>
+          <div id="desc1" class="desc">
+            Aquí puedes agregar la descripción del lugar.
+          </div>
+        </div>
+      </div>
+
+   
+      <div class="col-12 col-md-6 d-flex justify-content-center">
+        <div class="card-custom">
+          <button class="btn-more">saber más</button>
+          <div class="plus-btn" onclick="toggleDesc(2)">+</div>
+          <div id="desc2" class="desc">
+            Aquí puedes agregar la descripción del lugar.
+          </div>
+        </div>
+      </div>
+
+   
+      <div class="col-12 col-md-6 d-flex justify-content-center">
+        <div class="card-custom">
+          <button class="btn-more">saber más</button>
+          <div class="plus-btn" onclick="toggleDesc(3)">+</div>
+          <div id="desc3" class="desc">
+            Aquí puedes agregar la descripción del lugar.
+          </div>
+        </div>
+      </div>
+
+   
+      <div class="col-12 col-md-6 d-flex justify-content-center">
+        <div class="card-custom">
+          <button class="btn-more">saber más</button>
+          <div class="plus-btn" onclick="toggleDesc(4)">+</div>
+          <div id="desc4" class="desc">
+            Aquí puedes agregar la descripción del lugar.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function toggleDesc(num) {
+      let desc = document.getElementById("desc" + num);
+      desc.style.display = desc.style.display === "block" ? "none" : "block";
+    }
+  </script>
+
+</body>
+
+</html>
