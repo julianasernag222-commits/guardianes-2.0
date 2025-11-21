@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #faf9ef;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .registro-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem 1rem;
+    }
+
+    .registro-box {
+      background-color: #faf9ef;
+      text-align: center;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    h2 {
+      margin-bottom: 1.5rem;
+      font-weight: 500;
+    }
+
+    .form-control {
+      background-color: #dcdcdc;
+      border: none;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      padding: 10px;
+    }
+
+    .btn-registrar {
+      background-color: #6c8498;
+      color: white;
+      width: 100%;
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    .btn-registrar:hover {
+      background-color: #597181;
+    }
+
+    .tipo-usuario {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      align-items: center;
+      margin-top: 25px;
+    }
+
+    .iconos-redes {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      margin-top: 25px;
+      margin-bottom: 20px;
+    }
+
+    .iconos-redes a {
+      border: 2px solid #000;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.3s;
+    }
+
+    .iconos-redes a:hover {
+      background-color: #f1f1f1;
+    }
+
+    footer {
+      margin-top: auto;
+      width: 100%;
+    }
+
+    footer img {
+      width: 100%;
+      height: 280px;   /* Puedes subir o bajar este valor */
+      object-fit: cover;
+      display: block;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="registro-container">
+    <div class="registro-box">
+      <h2>Crea tu cuenta</h2>
+
+      <form>
+        <input type="text" class="form-control" placeholder="Nombre">
+        <input type="text" class="form-control" placeholder="Apellido">
+        <input type="email" class="form-control" placeholder="Correo electrónico">
+        <input type="password" class="form-control" placeholder="Contraseña">
+        <input type="password" class="form-control" placeholder="Confirmar contraseña">
+
+        <button type="submit" class="btn btn-registrar">Registrarme</button>
+
+        <div class="tipo-usuario">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="tipo" id="dueno" value="dueno">
+            <label class="form-check-label" for="dueno">dueño</label>
+          </div>
+
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="tipo" id="turista" value="turista">
+            <label class="form-check-label" for="turista">turista</label>
+          </div>
+        </div>
+      </form>
+
+      <div class="iconos-redes">
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/179/179309.png" width="25"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" width="25"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" width="25"></a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <img src="itagui.png" alt="Fondo inferior">
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.querySelector("form");
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const tipo = document.querySelector('input[name="tipo"]:checked');
+
+        if (!tipo) {
+          alert("Por favor, selecciona si eres dueño o turista.");
+          return;
+        }
+
+        if (tipo.value === "dueno") {
+          window.location.href = "Registro dueño.html";
+        } else {
+          alert("Registro completado como turista.");
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
