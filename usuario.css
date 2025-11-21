@@ -1,0 +1,171 @@
+/* esto hace que todo se organice bien en la página */
+* {
+  box-sizing: border-box;
+}
+
+/* fondo de la página y estilo de letra */
+body {
+  margin: 0;
+  background: #fbf5e2; /* color clarito del fondo */
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+/* contenedor grande que guarda todo */
+.wrap {
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* tarjeta amarilla donde va el perfil */
+.card {
+  position: relative;
+  background: #e0b134; /* color amarillo de la tarjeta */
+  border-radius: 28px;
+  padding: 50px 65px;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+  overflow: visible;
+  max-width: 900px; /* la tarjeta no tan grande */
+}
+
+/* los íconos que van arriba a la derecha */
+.top-icons {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.top-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  cursor: pointer;
+  opacity: 0.95;
+  transition: transform 0.14s ease, opacity 0.14s ease;
+}
+
+/* cuando paso el mouse se mueve un poquito */
+.top-icon:hover {
+  transform: translateY(-3px) scale(1.05);
+  opacity: 1;
+}
+
+/* parte izquierda donde está la foto del usuario */
+.left {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+}
+
+/* imagen del usuario */
+.avatar {
+  width: 60%;
+  height: auto;
+  display: block;
+  opacity: 0.95;
+}
+
+/* ícono de la cámara que va cerca de la foto */
+.cam-icon {
+  width: 20px;
+  height: 15px;
+  display: block;
+  position: relative;
+  top: 100px;
+  left: -170px;
+}
+
+/* parte derecha donde va el texto del perfil */
+.right {
+  flex: 1;
+  min-width: 300px;
+  padding-right: 20px;
+}
+
+/* nombre del usuario con letra Oswald */
+.name {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  margin: 6px 0 6px;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+/* nombre de usuario más pequeño debajo del nombre */
+.handle {
+  margin: 0 0 18px;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 16px;
+}
+
+/* recuadro azul donde va la descripción del usuario */
+.bio {
+  background: #7690a3;
+  color: #ffffff;
+  padding: 24px 28px;
+  border-radius: 28px;
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 78%;
+  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.02);
+}
+
+/* los íconos de abajo como medallas o estrellas */
+.symbols {
+  margin-top: 22px;
+}
+
+.simbolos {
+  width: 120px;
+  height: auto;
+  display: block;
+  opacity: 0.95;
+}
+
+/* un brillo suave alrededor de la tarjeta */
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 28px;
+  box-shadow: 0 0 80px rgba(224, 177, 52, 0.12);
+  z-index: -1;
+}
+
+/* cuando la pantalla es pequeña (celular) */
+@media (max-width: 880px) {
+  .card {
+    flex-direction: column;
+    padding: 32px;
+    align-items: center;
+  }
+  .left {
+    width: 100%;
+  }
+  .right {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  .bio {
+    max-width: 100%;
+  }
+  .name {
+    font-size: 34px;
+  }
+  .top-icons {
+    right: 18px;
+    top: 12px;
+  }
+}

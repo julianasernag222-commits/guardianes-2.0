@@ -1,0 +1,45 @@
+/* ---- ESTRELLAS DE CALIFICACIÓN ---- */
+.rating-container {
+  position: absolute;
+  bottom: 20px;
+  right: 25px;
+  background-color: #3a4d36; /* verde oscuro */
+  border-radius: 25px;
+  padding: 8px 15px;
+  display: flex;
+  gap: 8px;
+  z-index: 15;
+}
+
+.star {
+  font-size: 30px;
+  color: transparent; /* invisible al inicio */
+  -webkit-text-stroke: 1.5px #EAB940; /* borde dorado */
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease, -webkit-text-stroke 0.2s ease;
+}
+
+/* Cuando paso el mouse */
+.star.hovered {
+  color: #EAB940;
+  transform: scale(1.2);
+}
+
+/* Cuando hago clic (seleccionada) */
+.star.selected {
+  color: #EAB940;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .rating-container {
+    bottom: 15px;
+    right: 15px;
+    padding: 6px 12px;
+  }
+
+  .star {
+    font-size: 24px;
+    -webkit-text-stroke: 1.2px #EAB940;
+  }
+}

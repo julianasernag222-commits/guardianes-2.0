@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #faf9e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.contenedor-principal {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* Carrusel */
+.carrusel-vertical {
+  width: 320px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  overflow-y: auto;
+  padding-right: 10px;
+  scrollbar-width: thin;
+}
+
+.carrusel-vertical::-webkit-scrollbar {
+  width: 8px;
+}
+
+.carrusel-vertical::-webkit-scrollbar-thumb {
+  background: #bfbfbf;
+  border-radius: 5px;
+}
+
+/* Cada imagen */
+.item {
+  width: 100%;
+  height: 180px;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  opacity: 0.6;
+  transform: scale(0.95);
+  cursor: pointer;
+  flex-shrink: 0;
+  background-color: #f1f1f1;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Imagen activa (resaltada) */
+.item.activo {
+  transform: scale(1.1);
+  opacity: 1;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Información lateral */
+.info {
+  width: 50%;
+}
+
+.info h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.info p {
+  line-height: 1.5;
+}

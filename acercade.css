@@ -1,0 +1,112 @@
+/* estilo de todo */
+body {
+  background-color: #f9f8e9;
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+}
+
+/* Contenedor general de la sección */
+.acerca-container {
+  padding: 50px 0;
+}
+
+/* IZQUIERDA */
+.izquierda {
+  margin-left: 120px; 
+  max-width: 700px;   
+}
+
+/* Títulos izquierda */
+.titulo-principal {
+  font-family: 'Alex Brush', cursive;
+  color: #d39c4a;
+  font-size: 120px;
+  margin-bottom: 0;
+}
+
+.subtitulo {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  color: #5b7a2a;
+  font-size: 70px;
+  margin-top: -50px;
+  margin-bottom: 25px;
+  margin-left: 150px; /
+}
+
+/* texto azulito */
+.resaltado {
+  color: #7381b8;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+/* DERECHA */
+.derecha {
+  max-width: 520px;
+  margin-left: 50px;   
+  margin-right: 80px;  
+  margin-top: 290px;   
+  text-align: left;
+}
+
+/* título derecha "ACERCA DE TIP" */
+.titulo-tip {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+  color: #5b7a2a;
+  letter-spacing: 2px;
+  line-height: 1;
+  position: relative;
+  display: inline-flex;
+  align-items: center; 
+}
+
+/* logo TIP */
+.logo-tip {
+  width: 80px;
+  height: auto;
+  vertical-align: middle;
+  margin-left: 15px;
+  position: relative;
+  top: -4px; 
+}
+
+/* línea azul abajo del texto */
+.subrayado {
+  width: 100%;
+  height: 2px;
+  background-color: #7381b8;
+  margin: 10px 0 25px 0;
+}
+
+/* texto debajo de la derecha */
+.texto {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+/* para que se adapte */
+@media (max-width: 768px) {
+  .izquierda,
+  .derecha {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .titulo-tip {
+    font-size: 60px;
+  }
+
+  .logo-tip {
+    width: 60px;
+    top: -3px;
+  }
+}
+
+
+/* carrusel */
+
