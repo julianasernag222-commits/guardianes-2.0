@@ -84,7 +84,6 @@
   z-index: 9;
 }
 
-
 .icono.redondo {
   width: 40px;
   height: 40px;
@@ -95,12 +94,25 @@
   align-items: center;
   color: #4a5921;
   text-decoration: none;
+  }
+.imagen-derecha {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 35vw;         
+  height: 100vh;         
+  background-image: url("medio\ circulo.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 50% 0 0 50%;
+  z-index: -1;          
 }
-
 
 .iconos-desplegables.mostrar {
   display: flex;
 }
+
+
 
 </style>
 
@@ -117,8 +129,7 @@
 
    
     <div class="col-md-6 text-center">
-      <div class="recuadro">
-        <img src="images/img1.jpg" alt="">
+      <div class="recuadro">        <img src="Lugar 1 .png" alt="">
 
         <div class="boton-mas toggle-icono">
           <i class="bi bi-plus"></i>
@@ -136,7 +147,7 @@
 
     <div class="col-md-6 text-center">
       <div class="recuadro">
-        <img src="images/img2.jpg" alt="">
+        <img src="Lugar 2.png" alt="">
 
         <div class="boton-mas toggle-icono">
           <i class="bi bi-plus"></i>
@@ -154,7 +165,7 @@
  
     <div class="col-md-6 text-center">
       <div class="recuadro">
-        <img src="images/img3.jpg" alt="">
+        <img src="Lugar 3.png" alt="">
 
         <div class="boton-mas toggle-icono">
           <i class="bi bi-plus"></i>
@@ -200,5 +211,6 @@ document.querySelectorAll('.toggle-icono').forEach(function(boton) {
 });
 </script>
 
+<div class="imagen-derecha"></div>
 </body>
 </html>
