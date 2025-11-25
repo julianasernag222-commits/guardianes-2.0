@@ -1,45 +1,51 @@
- <div class="carrusel-fondo">
+
+
+
+
+
+
+<!-- CARRUSEL AMARILLO DEBAJO -->
+  <div class="carrusel-fondo">
     <div class="carrusel">
+
+      <!-- Flecha izquierda -->
       <button class="flecha flecha-izquierda" onclick="moverCarrusel(-1)">&#10094;</button>
+
+      <!-- Contenido -->
       <div class="carrusel-contenido" id="carruselContenido">
 
         <div class="tarjeta">
           <span class="fecha">9 - 17 Agosto</span>
           <img src="ita.jpg" alt="Fiestas 2025">
           <h3>Fiestas 2025</h3>
-          <p>Itagüí vivirá sus Fiestas 2025 con más de 1.000 artistas, conciertos gratis y el regreso del Día Mundial de
-            la Pereza.</p>
+          <p>Itagüí vivirá sus Fiestas 2025 con más de 1.000 artistas, conciertos gratis y el regreso del Día Mundial de la Pereza.</p>
         </div>
 
         <div class="tarjeta">
           <span class="fecha">17 de agosto</span>
           <img src="ita1.jpg" alt="">
           <h3>Día Mundial de la Pereza</h3>
-          <p>Una celebración única con desfiles de camas y actividades recreativas, promoviendo la tranquilidad y el
-            descanso.</p>
+          <p>Una celebración única con desfiles de camas y actividades recreativas, promoviendo la tranquilidad y el descanso.</p>
         </div>
 
         <div class="tarjeta">
           <span class="fecha">19 - 20 de julio</span>
           <img src="fiestas_independencia_2025.jpg" alt="Independencia en Itagüí">
           <h3>Gran Fiesta de la Independencia en Itagüí</h3>
-          <p>La Gran Fiesta de la Independencia en Itagüí es una celebración cívica y cultural que conmemora la
-            independencia de Colombia, ocurrida el 20 de julio de 1810.</p>
+          <p>Celebración cívica y cultural que conmemora la independencia de Colombia.</p>
         </div>
 
       </div>
+
+      <!-- Flecha derecha -->
       <button class="flecha flecha-derecha" onclick="moverCarrusel(1)">&#10095;</button>
+
     </div>
   </div>
 
   <div class="circulo"></div>
 
-
-  <img src="itagui 2.jpg" Itagüí" class="top-image">
-
-
- 
-
+  <!-- SCRIPT DEL CARRUSEL -->
   <script>
     const carrusel = document.getElementById("carruselContenido");
     function moverCarrusel(direccion) {
@@ -51,8 +57,8 @@
     }
   </script>
 
+  <!-- Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
 
 </body>
 

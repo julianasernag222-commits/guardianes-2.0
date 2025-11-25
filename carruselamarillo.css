@@ -5,17 +5,23 @@ body {
   overflow-x: hidden;
 }
 .carrusel-fondo {
-  position: relative;
-  height: 500px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url(); 
-  background-size: contain; 
-  background-position: top center;
-  background-repeat: no-repeat;
+    background-color: #D1A12A;
+    width: 100%;
+    padding: 80px 0;
+
+    /* BORRAR todo lo de posición absoluta */
+    position: relative;
+    top: 0;
+    left: 0;
+
+    /* BORRAR el border-radius enorme que hacía el óvalo gigante */
+    border-radius: 0;
+
+    /* Centrar contenido */
+    display: flex;
+    justify-content: center;
 }
+
 .carrusel {
   position: relative;
   display: flex;
