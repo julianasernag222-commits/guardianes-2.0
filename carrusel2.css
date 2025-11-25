@@ -18,7 +18,7 @@ body::before {
   left: 0;
   width: 110%;
   height: 110%;
-  background-image: url('juli.jpeg'); /* ← Aquí tu imagen */
+  background-image: url('juli.jpeg'); 
   background-size: cover;
   background-position: center;
   opacity: 0.25; /* Ajusta la opacidad aquí */
@@ -37,7 +37,7 @@ body::before {
   top: 25px;
   left: 25px;
   display: inline-block;
-  width: 60px; /* Tamaño del icono */
+  width: 60px; 
   height: 60px;
   transition: all 0.3s ease;
   z-index: 10;
@@ -74,7 +74,7 @@ body::before {
   align-items: center;
   gap: 20px;
   overflow-y: auto;
-  padding-right: 10px;
+  padding: 40px;
   scrollbar-width: thin;
 }
 
@@ -130,3 +130,4 @@ body::before {
   line-height: 1.5;
   color: #555;
 }
+
