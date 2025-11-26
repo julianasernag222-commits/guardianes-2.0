@@ -5,15 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gastronomía de Itagüí</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
   <style>
     body {
       font-family: 'Poppins', sans-serif;
       background-color: #fffaf2;
-      color: #4A5921;
+      color: #41604D;
     }
 
     h2 {
-      color: #4A5921;
+      color: #41604D;
       font-weight: 700;
       text-align: center;
       margin-bottom: 1rem;
@@ -38,6 +40,28 @@
       padding: 10px 20px;
       border-radius: 15px;
       color: #fff;
+    }
+
+   
+    .map-icon {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 48px;
+      height: 48px;
+      background: white;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      z-index: 5;
+      text-decoration: none !important;
+    }
+
+    .map-icon i {
+      font-size: 24px;
+      color: #E9BA3F;
     }
 
     .platos {
@@ -75,6 +99,7 @@
       overflow: hidden;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       transition: transform 0.3s ease;
+      position: relative; 
     }
 
     .card:hover {
@@ -88,7 +113,7 @@
 
     .btn-mas {
       background-color: #E9BA3F;
-      color: #4A5921;
+      color: #41604D;
       font-weight: bold;
       border: none;
       border-radius: 30px;
@@ -100,39 +125,8 @@
       color: white;
     }
 
-    .card-body h6 {
-      color: #E9BA3F;
-      font-weight: 600;
-      margin-bottom: 10px;
-    }
-
-    .card-body ul li {
-      margin-bottom: 6px;
-    }
-
-    .card-body p.text-muted {
-      font-size: 0.9rem;
-    }
-
-    .experiencias {
-      padding: 80px 0;
-      background-image: linear-gradient(to right, #fffaf2, #f5eedc);
-    }
-
-    .experiencias h2 {
-      color: #7F8C2A;
-    }
-
-    .experiencias p {
-      font-size: 1.1rem;
-      text-align: center;
-      max-width: 800px;
-      margin: 0 auto;
-      color: #4A5921;
-    }
-
     footer {
-      background-color: #4A5921;
+      background-color: #41604D;
     }
 
     footer p {
@@ -141,6 +135,7 @@
     }
   </style>
 </head>
+
 <body>
 
   <section class="hero">
@@ -150,22 +145,26 @@
   <section class="platos container text-center">
     <h2>Comida Típica</h2>
     <p>Descubre los platos tradicionales que reflejan la esencia paisa y la calidez de nuestra gente.</p>
+
     <div class="row mt-5">
       <div class="col-md-3 plato">
         <img src="bandeja-paisa .jpg"img-fluid" alt="Bandeja paisa">
         <h5>Bandeja Paisa</h5>
         <p>El clásico plato antioqueño lleno de sabor y tradición.</p>
       </div>
+
       <div class="col-md-3 plato">
         <img src="arepa paisa.jpg" class="img-fluid" alt="Arepa">
         <h5>Arepa de Maíz</h5>
         <p>Perfecta para acompañar cualquier comida del día.</p>
       </div>
+
       <div class="col-md-3 plato">
         <img src="sancocho.jpeg" class="img-fluid" alt="Sancocho">
         <h5>Sancocho</h5>
         <p>Un caldo típico ideal para compartir en familia.</p>
       </div>
+
       <div class="col-md-3 plato">
         <img src="empanadas.jpg" class="img-fluid" alt="Empanadas">
         <h5>Empanadas Paisas</h5>
@@ -174,7 +173,6 @@
     </div>
   </section>
 
- 
   <section class="lugares text-center">
     <div class="container">
       <h2>LUGARES RECOMENDADOS</h2>
@@ -182,23 +180,63 @@
 
       <div class="row mt-5">
         
+        
         <div class="col-md-4">
           <div class="card">
+
+            
+            <a href="mapa.html" class="map-icon">
+              <i class="bi bi-geo-alt-fill"></i>
+            </a>
+
             <img src="BARRIL.jpg" class="card-img-top" alt="Restaurante Sabor y Humo">
+
             <div class="card-body">
               <h5 class="card-title">SABOR Y HUMO</h5>
               <p class="card-text">Comida al barril típica antioqueña y ambiente familiar.</p>
+
               <button class="btn btn-mas" type="button" data-bs-toggle="collapse" data-bs-target="#menuSaborHumo">Ver más</button>
 
               <div class="collapse mt-3" id="menuSaborHumo">
                 <h6>Menú destacado</h6>
                 <ul class="list-unstyled text-start small">
-                  <li> <b>Picadas:</b> personal, para dos, súper o familiar.</li>
-                  <li> <b>Hamburguesa Smoke:</b> carne de res ahumada con queso filadelfia y bondiola bañada en salsa de uchuvas.</li>
-                  <li> <b>Costillas Ribs:</b> 300 g de costillas ahumadas y caramelizadas en BBQ.</li>
-                  <li> <b>Cevicharrón:</b> chicharrón crocante con papas y arepas con queso crema.</li>
+                  <li><b>Picadas:</b> personal, para dos, súper o familiar.</li>
+                  <li><b>Hamburguesa Smoke:</b> carne de res ahumada con queso filadelfia y bondiola bañada en salsa de uchuvas.</li>
+                  <li><b>Costillas Ribs:</b> 300 g de costillas ahumadas y caramelizadas en BBQ.</li>
+                  <li><b>Cevicharrón:</b> chicharrón crocante con papas y arepas con queso crema.</li>
                 </ul>
                 <p class="text-muted small mt-2">Bebidas: mojitos, cervezas, gaseosas y jugos naturales.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col-md-4">
+          <div class="card">
+
+            <a href="mapa.html" class="map-icon">
+              <i class="bi bi-geo-alt-fill"></i>
+            </a>
+
+            <img src="GOURMET.jpg" class="card-img-top" alt="Restaurante La Burguersería Gourmet">
+
+            <div class="card-body">
+              <h5 class="card-title">LA BURGUERSERÍA GOURMET</h5>
+              <p class="card-text">Hamburguesas artesanales con ingredientes locales y sabores únicos.</p>
+
+              <button class="btn btn-mas" type="button" data-bs-toggle="collapse" data-bs-target="#menuGourmet">Ver más</button>
+
+              <div class="collapse mt-3" id="menuGourmet">
+                <h6>Menú destacado</h6>
+                <ul class="list-unstyled text-start small">
+                  <li><b>Clásica:</b> carne 150 g, queso, lechuga, tomate y pan artesanal.</li>
+                  <li><b>Bacon Lovers:</b> doble carne, tocineta, cebolla caramelizada y queso cheddar.</li>
+                  <li><b>Cheese Bomb:</b> carne de res con mezcla de quesos fundidos.</li>
+                  <li><b>Mexican Burger:</b> guacamole, nachos triturados y toque picante.</li>
+                  <li>Acompañamientos: papas fritas, papas rústicas o aros de cebolla.</li>
+                </ul>
+                <p class="text-muted small mt-2">Bebidas: gaseosas, malteadas y limonadas artesanales.</p>
               </div>
             </div>
           </div>
@@ -207,49 +245,34 @@
        
         <div class="col-md-4">
           <div class="card">
-            <img src="GOURMET.jpg" class="card-img-top" alt="Restaurante La Burguersería Gourmet">
-            <div class="card-body">
-              <h5 class="card-title">LA BURGUERSERÍA GOURMET</h5>
-              <p class="card-text">Hamburguesas artesanales con ingredientes locales y sabores únicos.</p>
-              <button class="btn btn-mas" type="button" data-bs-toggle="collapse" data-bs-target="#menuGourmet">Ver más</button>
 
-              <div class="collapse mt-3" id="menuGourmet">
-                <h6>Menú destacado</h6>
-                <ul class="list-unstyled text-start small">
-                  <li> <b>Clásica:</b> carne 150 g, queso, lechuga, tomate y pan artesanal.</li>
-                  <li> <b>Bacon Lovers:</b> doble carne, tocineta, cebolla caramelizada y queso cheddar.</li>
-                  <li> <b>Cheese Bomb:</b> carne de res con mezcla de quesos fundidos.</li>
-                  <li> <b>Mexican Burger:</b> guacamole, nachos triturados y toque picante.</li>
-                  <li> Acompañamientos: papas fritas, papas rústicas o aros de cebolla.</li>
-                </ul>
-                <p class="text-muted small mt-2">Bebidas: gaseosas, malteadas y limonadas artesanales.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+            <a href="mapa.html" class="map-icon">
+              <i class="bi bi-geo-alt-fill"></i>
+            </a>
 
-        <div class="col-md-4">
-          <div class="card">
             <img src="BBQ.jpg" class="card-img-top" alt="Restaurante The Monkeys BBQ">
+
             <div class="card-body">
               <h5 class="card-title">THE MONKEYS BBQ</h5>
               <p class="card-text">Desayunos, almuerzos y comidas rápidas con el mejor sabor casero.</p>
+
               <button class="btn btn-mas" type="button" data-bs-toggle="collapse" data-bs-target="#menuMonkeys">Ver más</button>
 
               <div class="collapse mt-3" id="menuMonkeys">
                 <h6>Menú destacado</h6>
                 <ul class="list-unstyled text-start small">
-                  <li> <b>Desayunos:</b> arepa casera, quesito, carne a elección, croissant, café o chocolate.</li>
-                  <li> <b>Menú del día:</b> sopa o frijoles, carne a elección, arroz, plátano maduro, ensalada y jugo.</li>
-                  <li> <b>Parrilla:</b> punta de anca, churrasco, costillas BBQ, pollo a la plancha o lomito de cerdo.</li>
-                  <li> <b>Hamburguesas:</b> clásicas, mixtas, con aros de cebolla o cebolla caramelizada.</li>
-                  <li> <b>Quesadillas:</b> de pollo, cañón, res o mixtas con maicitos y tocineta.</li>
+                  <li><b>Desayunos:</b> arepa casera, quesito, carne a elección, croissant, café o chocolate.</li>
+                  <li><b>Menú del día:</b> sopa o frijoles, carne a elección, arroz, plátano maduro, ensalada y jugo.</li>
+                  <li><b>Parrilla:</b> punta de anca, churrasco, costillas BBQ, pollo a la plancha o lomito de cerdo.</li>
+                  <li><b>Hamburguesas:</b> clásicas, mixtas, con aros de cebolla o cebolla caramelizada.</li>
+                  <li><b>Quesadillas:</b> de pollo, cañón, res o mixtas con maicitos y tocineta.</li>
                 </ul>
                 <p class="text-muted small mt-2">Bebidas: jugos naturales, sodas, cervezas y limonadas.</p>
               </div>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -267,5 +290,6 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
