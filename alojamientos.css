@@ -1,0 +1,83 @@
+#alojamientos {
+  background-color: #fdf9e7;
+  padding: 60px 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.alojamientos-titulo {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.alojamientos-titulo h2 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  color: #4f5d3a;
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+
+.alojamientos-titulo p {
+  color: #555;
+  font-size: 1.1em;
+}
+
+.alojamientos-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.alojamiento-card {
+  background-color: #fff;
+  border-radius: 20px;
+  width: 320px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* IMÁGENES */
+.alojamiento-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-info h3 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  color: #4f5d3a;
+  margin-bottom: 10px;
+}
+
+.card-info p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.btn-mapa {
+  width: 40px;           
+  height: 40px;
+  background-image: url(ub.svg); 
+  background-size: 70% 70%;   
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  cursor: pointer;
+  margin-top: auto;
+}
+
