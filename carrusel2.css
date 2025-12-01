@@ -130,3 +130,7 @@ body::before {
   line-height: 1.5;
   color: #555;
 }
+/* --- BAJAR TODO EL CARRUSEL --- */
+.contenedor-principal {
+    margin-top: 140px !important;  /* Ajusta el número si lo quieres más abajo */
+}

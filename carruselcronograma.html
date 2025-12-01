@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cronograma del mes</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f8f1dd; /* crema */
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    /* TÍTULO PRINCIPAL */
+    h1 {
+      font-family: "Alex Brush", cursive;
+      font-size: 55px;
+      color: #41604D;
+      margin-bottom: 30px;
+    }
+
+    /* CARRUSEL CONTENEDOR */
+    .carousel-wrapper {
+      position: relative;
+      width: 90%;
+      margin: 0 auto;
+      overflow: hidden;
+      padding: 20px 0;
+    }
+
+    /* LISTA DE TARJETAS */
+    .carousel-track {
+      display: flex;
+      gap: 20px;
+      transition: transform 0.4s ease;
+    }
+
+    /* TARJETAS */
+    .card-evento {
+      min-width: 330px;
+      height: 380px; /* Más pequeño verticalmente */
+      background-color: #778899;
+      border-radius: 20px;
+      color: white;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* IMAGEN */
+    .miniatura {
+      width: 100%;
+      height: 130px;
+      border-radius: 12px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    /* FECHAS */
+    .fecha-box {
+      background-color: #E5B24D;
+      padding: 10px 15px;
+      border-radius: 12px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .fecha-num {
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .fecha-mes {
+      font-size: 13px;
+      margin-top: -5px;
+    }
+
+    /* TEXTO INTERNO */
+    .titulo-evento {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .descripcion-evento {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    /* FLECHAS */
+    .arrow {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 5;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .arrow-left {
+      left: 0;
+      background: #E5B24D;
+      color: white;
+    }
+
+    .arrow-right {
+      right: 0;
+      background: #E5B24D;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Cronograma del mes</h1>
+
+<div class="carousel-wrapper">
+
+  <!-- FLECHAS -->
+  <div class="arrow arrow-left">&#8249;</div>
+  <div class="arrow arrow-right">&#8250;</div>
+
+  <div class="carousel-track">
+
+    <!-- TARJETA 1 -->
+    <div class="card-evento">
+      <img src="ita.jpg" class="miniatura">
+      <div class="fecha-box">
+        <div><div class="fecha-num">9</div><div class="fecha-mes">Agosto</div></div>
+        <div style="font-size:25px;font-weight:bold;">›</div>
+        <div><div class="fecha-num">17</div><div class="fecha-mes">Agosto</div></div>
+      </div>
+      <div class="titulo-evento">Fiestas 2025</div>
+      <div class="descripcion-evento">
+        Itagüí vivirá sus Fiestas 2025 con más de 1.000 artistas y conciertos gratis.
+      </div>
+    </div>
+
+    <!-- TARJETA 2 -->
+    <div class="card-evento">
+      <img src="itarosa.png" class="miniatura">
+      <div class="fecha-box">
+        <div><div class="fecha-num">12</div><div class="fecha-mes">Sept</div></div>
+        <div style="font-size:25px;font-weight:bold;">›</div>
+        <div><div class="fecha-num">15</div><div class="fecha-mes">Sept</div></div>
+      </div>
+      <div class="titulo-evento">INSPIRATE FEST </div>
+      <div class="descripcion-evento">
+       Inspírate Fest
+Alejandra Borrero, Amparo Grisales, Hebert Vargas....
+      </div>
+    </div>
+
+    <!-- TARJETA 3 -->
+    <div class="card-evento">
+      <img src="eventobita.png" class="miniatura">
+      <div class="fecha-box">
+        <div><div class="fecha-num">5</div><div class="fecha-mes">Oct</div></div>
+        <div style="font-size:25px;font-weight:bold;">›</div>
+        <div><div class="fecha-num">12</div><div class="fecha-mes">Oct</div></div>
+      </div>
+      <div class="titulo-evento">Festival de Danza</div>
+      <div class="descripcion-evento">
+        Presentaciones culturales, folclóricas y shows de bailarines invitados.
+      </div>
+    </div>
+
+    <!-- TARJETA 4 (NUEVA) -->
+    <div class="card-evento">
+      <img src="eventogrupo.png" class="miniatura">
+      <div class="fecha-box">
+        <div><div class="fecha-num">1</div><div class="fecha-mes">Nov</div></div>
+        <div style="font-size:25px;font-weight:bold;">›</div>
+        <div><div class="fecha-num">3</div><div class="fecha-mes">Nov</div></div>
+      </div>
+      <div class="titulo-evento">Mall Suramérica Vive las Fiestas</div>
+      <div class="descripcion-evento">
+       6:00 p. m. – Cristhian Dheneb Ossa Riascos7:00 p. m. – Damaris Navarro...
+      </div>
+    </div>
+
+    <!-- TARJETA 5 (NUEVA) -->
+    <div class="card-evento">
+      <img src="2rosados.png" class="miniatura">
+      <div class="fecha-box">
+        <div><div class="fecha-num">20</div><div class="fecha-mes">Dic</div></div>
+        <div style="font-size:25px;font-weight:bold;">›</div>
+        <div><div class="fecha-num">22</div><div class="fecha-mes">Dic</div></div>
+      </div>
+      <div class="titulo-evento">Expo Arte</div>
+      <div class="descripcion-evento">
+        Exhibición de arte local, talleres y artistas invitados.
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- JS -->
+<script>
+  const track = document.querySelector('.carousel-track');
+  const btnRight = document.querySelector('.arrow-right');
+  const btnLeft = document.querySelector('.arrow-left');
+
+  let position = 0;
+  const cardWidth = 350;
+
+  btnRight.addEventListener("click", () => {
+    position -= cardWidth;
+    if (Math.abs(position) >= track.scrollWidth - 800) return;
+    track.style.transform = `translateX(${position}px)`;
+  });
+
+  btnLeft.addEventListener("click", () => {
+    position += cardWidth;
+    if (position > 0) position = 0;
+    track.style.transform = `translateX(${position}px)`;
+  });
+</script>
+
+</body>
+</html>
